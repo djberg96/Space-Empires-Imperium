@@ -1,0 +1,33 @@
+<svg width="250" height="350" xmlns="http://www.w3.org/2000/svg">
+  <title>Escape Plan</title>
+  <rect id="card_background" width="100%" height="100%" fill="black" stroke="white" stroke-width="15"/>
+  <g id="card_name" text-anchor="middle" dominant-baseline="central">
+    <rect id="name" x="20" y="20" width="210"/>
+    <text x="125" y="45" fill="white" font-size="28" font-family="stop">ESCAPE PLAN</text>
+  </g>
+  <g id="when" text-anchor="middle" dominant-baseline="central">
+    <rect x="80" y="68" rx="8" ry="4" width="90" height="22" fill="red"/>
+    <text x="125" y="80" fill="white" font-size="18">COMBAT</text>
+  </g>
+  <g id="description">
+    <rect x="20" y="120" width="210" height="210" fill="lightgrey" stroke="white" stroke-width="3"/>
+    <g id="text">
+      <foreignObject x="30" y="140" width="190" height="210">
+        <div
+          xmlns="http://www.w3.org/1999/xhtml"
+          style="
+            font-size: 16px;
+            overflow-wrap: break-word;
+            text-align: center;
+          "
+        >
+          <p>You may terminate combat without being fired upon.</p>
+          <p style="margin: 1rem auto;"/>
+          <p>All of your ships that retreat must retreat to the same area.</p>
+          <p style="margin: 1rem auto;"/>
+          <p>If terminating combat at a friendly World, immediately lose 1 Glory Point.</p>
+        </div>
+      </foreignObject>
+    </g>
+  </g>
+</svg>

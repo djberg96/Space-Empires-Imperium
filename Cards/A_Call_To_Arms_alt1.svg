@@ -1,0 +1,26 @@
+<svg width="250" height="350" xmlns="http://www.w3.org/2000/svg">
+  <rect id="card_background" width="100%" height="100%" fill="white" stroke="black" stroke-width="15"/>
+  <g id="card_name" text-anchor="middle" dominant-baseline="central">
+    <rect id="name" x="20" y="20" width="210"/>
+    <text x="125" y="45" fill="black" font-size="30" font-family="stop">A CALL TO ARMS</text>
+  </g>
+  <g id="when" text-anchor="middle" dominant-baseline="central">
+    <rect x="80" y="72" rx="8" ry="4" width="90" height="22" fill="red"/>
+    <text x="125" y="83" fill="black" font-size="18">COMBAT</text>
+  </g>
+  <g id="description">
+    <rect x="20" y="120" width="210" height="210" fill="white"/>
+    <g id="text" text-anchor="middle" font-size="16">
+      <text id="main_text">
+        <tspan x="50%" dy="150">Your ships from a single, </tspan>
+        <tspan x="50%" dy="1.2em">adjacent, connected system</tspan>
+        <tspan x="50%" dy="1.2em">may join a battle at the start of</tspan>
+        <tspan x="50%" dy="1.2em">the 2nd round of combat.</tspan>
+        <tspan x="50%" dy="2.4em">REQUIREMENT: Have at</tspan>
+        <tspan x="50%" dy="1.2em">least 1 surviving ship.</tspan>
+        <tspan x="50%" dy="2.2em" font-size="14" font-style="italic">EXCEPTION: Monitors</tspan>
+        <tspan x="50%" dy="1.2em" font-size="14" font-style="italic">may not use this event.</tspan>
+      </text>
+    </g>
+  </g>
+</svg>
