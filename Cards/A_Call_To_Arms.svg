@@ -12,11 +12,12 @@
     <rect x="20" y="120" width="210" height="210" fill="lightgrey" stroke="white" stroke-width="3"/>
     <g id="text" text-anchor="middle" font-size="16">
       <text id="main_text">
-        <tspan x="50%" dy="150">Your ships from a single, </tspan>
+        <tspan x="50%" dy="140">Your ships from a single, </tspan>
         <tspan x="50%" dy="1.2em">adjacent, connected system</tspan>
-        <tspan x="50%" dy="1.2em">may join a battle at the start of</tspan>
-        <tspan x="50%" dy="1.2em">the 2nd round of combat.</tspan>
-        <tspan x="50%" dy="2.4em">REQUIREMENT: Have at</tspan>
+        <tspan x="50%" dy="1.2em">may join a battle at the</tspan>
+        <tspan x="50%" dy="1.2em">the start of the 2nd</tspan>
+        <tspan x="50%" dy="1.2em">round of combat.</tspan>
+        <tspan x="50%" dy="2.1em">REQUIREMENT: Have at</tspan>
         <tspan x="50%" dy="1.2em">least 1 surviving ship.</tspan>
         <tspan x="50%" dy="2.2em" font-size="14" font-style="italic">EXCEPTION: Monitors</tspan>
         <tspan x="50%" dy="1.2em" font-size="14" font-style="italic">may not use this event.</tspan>
