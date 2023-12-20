@@ -12,22 +12,16 @@
   <g id="description">
     <rect x="20" y="120" width="210" height="210" fill="lightgrey" stroke="white" stroke-width="3"/>
     <g id="text">
-      <foreignObject x="30" y="140" width="190" height="210">
-        <div
-          xmlns="http://www.w3.org/1999/xhtml"
-          style="
-            font-size: 16px;
-            overflow-wrap: break-word;
-            text-align: center;
-          "
-        >
-          <p>You may terminate combat without being fired upon.</p>
-          <p style="margin: 1rem auto;"/>
-          <p>All of your ships that retreat must retreat to the same area.</p>
-          <p style="margin: 1rem auto;"/>
-          <p>If terminating combat at a friendly World, immediately lose 1 Glory Point.</p>
-        </div>
-      </foreignObject>
+      <text id="main_text" text-anchor="middle" font-size="14">
+         <tspan x="50%" dy="145">You may terminate combat</tspan>
+         <tspan x="50%" dy="1.2em">and retreat without</tspan>
+         <tspan x="50%" dy="1.2em">being fired upon.</tspan>
+         <tspan x="50%" dy="2.2em">All of your ships that retreat</tspan>
+         <tspan x="50%" dy="1.2em">must retreat to the same area.</tspan>
+         <tspan x="50%" dy="2.2em">If terminating combat at</tspan>
+         <tspan x="50%" dy="1.2em">a friendly World, then</tspan>
+         <tspan x="50%" dy="1.2em">immediately lose 1 Glory Point.</tspan>
+      </text>
     </g>
   </g>
 </svg>
