@@ -12,31 +12,18 @@
   <g id="description">
     <rect x="20" y="120" width="210" height="210" fill="lightgrey" stroke="white" stroke-width="3"/>
     <g id="text">
-      <foreignObject x="30" y="120" width="190" height="210">
-        <div
-          xmlns="http://www.w3.org/1999/xhtml"
-          style="
-            font-size: 14px;
-            overflow-wrap: break-word;
-            text-align: center;
-          "
-        >
-          <p>
-            If your fleet has destroyed all enemy ships and/or all enemy
-            ships have retreated, then your victorious fleet may make one
-            more jump.
-          </p>
-          <p style="margin: 1rem auto;"/>
-          <p>
-            This can potentially lead to another combat, which must be resolved next.
-          </p>
-          <p style="margin: 1rem auto;"/>
-          <p>
-            Disrupted ships must make a maintenance roll to take
-            advantage of this card.
-          </p>
-        </div>
-      </foreignObject>
+      <text id="main_text" text-anchor="middle" font-size="13">
+        <tspan x="50%" dy="150">If all enemy ships have been</tspan>
+        <tspan x="50%" dy="1.2em">destroyed and/or retreated</tspan>
+        <tspan x="50%" dy="1.2em">then your victorious fleet may</tspan>
+        <tspan x="50%" dy="1.2em">immediately make</tspan>
+        <tspan x="50%" dy="1.2em">one more jump.</tspan>
+        <tspan x="50%" dy="2.2em">This could lead to another combat</tspan>
+        <tspan x="50%" dy="1.2em">which must be resolved next.</tspan>
+        <tspan x="50%" dy="2.2em">Disrupted ships must make a</tspan>
+        <tspan x="50%" dy="1.2em">maintenance roll to take</tspan>
+        <tspan x="50%" dy="1.2em">advantage of this card.</tspan>
+      </text>
     </g>
   </g>
 </svg>
