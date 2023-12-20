@@ -12,21 +12,12 @@
   <g id="description">
     <rect x="20" y="120" width="210" height="210" fill="lightgrey" stroke="white" stroke-width="3"/>
     <g id="text">
-      <foreignObject x="30" y="150" width="190" height="210">
-        <div
-          xmlns="http://www.w3.org/1999/xhtml"
-          style="
-            font-size: 22px;
-            overflow-wrap: break-word;
-            text-align: center;
-          "
-        >
-          <p>
-            This turn add 5 RP to your total, and
-            add +1 to all maintenance rolls.
-          </p>
-        </div>
-      </foreignObject>
+      <text id="main_text" text-anchor="middle" font-size="22">
+        <tspan x="50%" dy="170">This turn add 5 RP</tspan>
+        <tspan x="50%" dy="1.2em">to your total, and</tspan>
+        <tspan x="50%" dy="1.2em">add +1 to all</tspan>
+        <tspan x="50%" dy="1.2em">maintenance rolls.</tspan>
+      </text>
     </g>
   </g>
 </svg>
