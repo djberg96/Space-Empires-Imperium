@@ -12,23 +12,15 @@
  <g id="description">
     <rect x="20" y="120" width="210" height="210" fill="lightgrey" stroke="white" stroke-width="3"/>
     <g id="text">
-      <foreignObject x="30" y="150" width="190" height="210">
-        <div
-          xmlns="http://www.w3.org/1999/xhtml"
-          style="
-            font-size: 16px;
-            overflow-wrap: break-word;
-            text-align: center;
-          "
-        >
-          <p>
-            For this ground combat all of your defending regular
-            troops add +2 to their rating.
-          </p>
-          <p style="margin: 1rem auto;"/>
-          <p>Your jump troops fire simultaneously against regular troops.</p>
-        </div>
-      </foreignObject>
+      <text id="main_text" text-anchor="middle" font-size="18">
+        <tspan x="50%" dy="160">For this ground combat</tspan>
+        <tspan x="50%" dy="1.2em">all of your defending</tspan>
+        <tspan x="50%" dy="1.2em">regular troops add +2</tspan>
+        <tspan x="50%" dy="1.2em">to their rating</tspan>
+        <tspan x="50%" dy="2.2em">Your jump troops fire</tspan>
+        <tspan x="50%" dy="1.2em">simultaneously against</tspan>
+        <tspan x="50%" dy="1.2em">against regular troops.</tspan>
+      </text>
     </g>
   </g>
 </svg>
