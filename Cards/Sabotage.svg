@@ -12,25 +12,17 @@
   <g id="description">
     <rect x="20" y="120" width="210" height="210" fill="lightgrey" stroke="white" stroke-width="3"/>
     <g id="text">
-      <foreignObject x="30" y="110" width="190" height="210">
-        <div
-          xmlns="http://www.w3.org/1999/xhtml"
-          style="
-            font-size: 16px;
-            overflow-wrap: break-word;
-            text-align: center;
-          "
-        >
-          <p>Play immediately after Maintenance and Production has been completed.</p>
-          <p style="margin: 1rem auto;"/>
-          <p>
-            Disrupt 1d6 enemy ships in any system containing an enemy outpost
-            that is in or adjacent to one of your own worlds or outposts.
-          </p>
-          <p style="margin: 2rem auto;"/>
-          <p>RESHUFFLE</p>
-        </div>
-      </foreignObject>
+      <text id="main_text" text-anchor="middle" font-size="15">
+        <tspan x="50%" dy="140">Play immediately after</tspan>
+        <tspan x="50%" dy="1.2em">Maintenance and Production</tspan>
+        <tspan x="50%" dy="1.2em">has been completed.</tspan>
+        <tspan x="50%" dy="2.2em">Disrupt 1d6 enemy ships in</tspan>
+        <tspan x="50%" dy="1.2em">any system containing an</tspan>
+        <tspan x="50%" dy="1.2em">an enemy outpost that is</tspan>
+        <tspan x="50%" dy="1.2em">in or adjacent to one of</tspan>
+        <tspan x="50%" dy="1.2em">your own worlds or outposts.</tspan>
+        <tspan x="50%" dy="2.2em">RESHUFFLE</tspan>
+      </text>
     </g>
   </g>
 </svg>
