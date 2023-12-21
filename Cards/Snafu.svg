@@ -12,22 +12,17 @@
   <g id="description">
     <rect x="20" y="120" width="210" height="210" fill="lightgrey" stroke="white" stroke-width="3"/>
     <g id="text">
-      <foreignObject x="30" y="120" width="190" height="210">
-        <div
-          xmlns="http://www.w3.org/1999/xhtml"
-          style="
-            font-size: 16px;
-            overflow-wrap: break-word;
-            text-align: center;
-          "
-        >
-          <p>Play at the start of the enemy's movement phase</p>
-          <p style="margin: 1rem auto;"/>
-          <p>Choose any system containing an enemy Outpost.</p>
-          <p style="margin: 1rem auto;"/>
-          <p>Ships in the designated system may only make up to 2 jumps this movement phase.</p>
-        </div>
-      </foreignObject>
+      <text id="main_text" text-anchor="middle" font-size="15">
+        <tspan x="50%" dy="140">Play at the start of the</tspan>
+        <tspan x="50%" dy="1.2em">enemy's movement phase.</tspan>
+        <tspan x="50%" dy="2.2em">Choose any system</tspan>
+        <tspan x="50%" dy="1.2em">containing an</tspan>
+        <tspan x="50%" dy="1.2em">enemy Outpost.</tspan>
+        <tspan x="50%" dy="2.2em">Ships in the designated</tspan>
+        <tspan x="50%" dy="1.2em">system may only make up to</tspan>
+        <tspan x="50%" dy="1.2em">two jumps this</tspan>
+        <tspan x="50%" dy="1.2em">movement phase.</tspan>
+      </text>
     </g>
   </g>
 </svg>
