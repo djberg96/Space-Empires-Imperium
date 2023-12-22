@@ -12,13 +12,13 @@
   <g id="description">
     <rect x="20" y="120" width="210" height="210" fill="lightgrey" stroke="white" stroke-width="3"/>
     <g id="text">
-      <text id="main_text" text-anchor="middle" font-size="15">
-        <tspan x="50%" dy="140">Play at the start of the</tspan>
+      <text id="main_text" text-anchor="middle" font-size="14">
+        <tspan x="50%" dy="150">Play at the start of the</tspan>
         <tspan x="50%" dy="1.2em">enemy's movement phase.</tspan>
-        <tspan x="50%" dy="2.2em">Choose any system</tspan>
+        <tspan x="50%" dy="2.2em">Choose any one system</tspan>
         <tspan x="50%" dy="1.2em">containing an</tspan>
         <tspan x="50%" dy="1.2em">enemy Outpost.</tspan>
-        <tspan x="50%" dy="2.2em">Ships in the designated</tspan>
+        <tspan x="50%" dy="2.2em">Enemy ships in the designated</tspan>
         <tspan x="50%" dy="1.2em">system may only make up to</tspan>
         <tspan x="50%" dy="1.2em">two jumps this</tspan>
         <tspan x="50%" dy="1.2em">movement phase.</tspan>
