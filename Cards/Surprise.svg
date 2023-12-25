@@ -12,14 +12,11 @@
   <g id="description">
     <rect x="20" y="120" width="210" height="210" fill="lightgrey" stroke="white" stroke-width="3"/>
     <text id="main_text" text-anchor="middle" font-size="18">
-      <tspan x="50%" dy="150">Skip the range</tspan>
-      <tspan x="50%" dy="1.2em">determination roll</tspan>
-      <tspan x="50%" dy="1.2em">for the first two</tspan>
-      <tspan x="50%" dy="1.2em">rounds of combat.</tspan>
-      <tspan x="50%" dy="2.2em">Instead, you choose</tspan>
-      <tspan x="50%" dy="1.2em">the range for</tspan>
-      <tspan x="50%" dy="1.2em">the first two</tspan>
-      <tspan x="50%" dy="1.2em">combat rounds.</tspan>
+      <tspan x="50%" dy="180">Skip the range</tspan>
+      <tspan x="50%" dy="1.2em">determination roll.</tspan>
+      <tspan x="50%" dy="1.2em">Instead, you choose</tspan>
+      <tspan x="50%" dy="1.2em">the range for every</tspan>
+      <tspan x="50%" dy="1.2em">combat round.</tspan>
     </text>
   </g>
 </svg>
