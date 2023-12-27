@@ -20,7 +20,7 @@
 
     <g id="description">
       <rect x="20" y="120" width="210" height="210" fill="lightgrey" stroke="white" stroke-width="3"/>
-      <text id="text" text-anchro="middle" font-size="13">
+      <text id="text" text-anchor="middle" font-size="13">
         <tspan x="50%" dy="135">Do not make range</tspan>
         <tspan x="50%" dy="1.2em">determination rolls this combat.</tspan>
         <tspan x="50%" dy="1.2em">Every ship may fire at</tspan>
