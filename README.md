@@ -41,6 +41,17 @@ latexmk -pdf -jobname=Space_Empires_Imperium_Battle_Board battle_board.tex
 This produces `Space_Empires_Imperium_Battle_Board.pdf`, formatted as one
 8.5-by-11-inch landscape page.
 
+## Build the logistics and fleet record
+
+The economic-phase worksheet and hidden Armament Package manifest are combined
+on one landscape letter-size sheet. Print one copy per player. Build it with:
+
+```sh
+latexmk -pdf -jobname=Space_Empires_Imperium_Logistics_Aid logistics_aid.tex
+```
+
+This produces `Space_Empires_Imperium_Logistics_Aid.pdf`.
+
 ## Required games
 
 The design assumes access to the original *Imperium* map, *Space Empires: 4X*,
