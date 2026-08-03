@@ -22,3 +22,7 @@ The goal is to mashup the old GDW Imperium board game with the more modern Space
 * A deck of cards with various events, bonuses, etc that players can use in limited amounts.
   Stuff that gives the game a little flavor but does not tilt the game. Perhaps the players
   get some for free but can purchase more.
+
+## Rules
+
+The rules should be in LaTeX format, with each major section in its own file. You can remove the standalone variant, that can live i
