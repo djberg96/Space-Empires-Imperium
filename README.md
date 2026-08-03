@@ -29,6 +29,18 @@ pdflatex -jobname=Space_Empires_Imperium main.tex
 
 The source is split by major rules section and assembled by `main.tex`.
 
+## Build the battle board
+
+The counter display and combat reference are a separate landscape letter-size
+sheet. Build it with:
+
+```sh
+latexmk -pdf -jobname=Space_Empires_Imperium_Battle_Board battle_board.tex
+```
+
+This produces `Space_Empires_Imperium_Battle_Board.pdf`, formatted as one
+8.5-by-11-inch landscape page.
+
 ## Required games
 
 The design assumes access to the original *Imperium* map, *Space Empires: 4X*,
