@@ -12,8 +12,8 @@ use *Space Empires*' cleaner counters and d10 combat system.
   high-intensity missile fire, political interference, and wars separated by
   peace.
 - *Space Empires: 4X*: hidden groups, printed ship statistics, firing classes,
-  screening, fleet-size bonus, hull damage, maintenance by hull, fighters, and
-  retreat.
+  screening, fleet-size bonus, hull damage, maintenance by hull, fighters,
+  Ship Yards, and retreat.
 - *Close Encounters*: Transports, Infantry, Space Marines, Heavy Infantry, Grav
   Armor, Militia, and class-based ground combat.
 - *Traveller*: maneuvering pickets, laser point defense against missiles, and
@@ -50,6 +50,8 @@ Change only one of these between tests:
 5. Initial Glory (move to 6 if the Imperium loses by waiting too often).
 6. Reaction allowances (2 Terran and 3 Imperial at present).
 7. Mixed Package penalties and starting Point Defense (both sides begin at 1).
+8. Ship Yard capacity (fixed at one Hull Size point per yard and Logistics
+   Phase).
 
 ## First playtest procedure
 
@@ -76,6 +78,8 @@ After the game, answer:
 - Did Point Defense and sandcasters create useful choices without slowing each
   firing round?
 - Was bombardment useful without making Ground Units irrelevant?
+- Did Ship Yards create meaningful industrial targets without delaying larger
+  ships too severely?
 - Did Glory reward taking meaningful risks rather than gaming an Outpost?
 - Which rule required an interpretation not present in the draft?
 

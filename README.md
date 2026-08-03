@@ -3,7 +3,7 @@
 A non-commercial two-player mashup of GDW's *Imperium* and GMT's *Space
 Empires: 4X* with *Close Encounters*. It uses the Traveller setting and
 point-to-point map of the former with the ship groups, hull-damage combat,
-fighters, and ground units of the latter. Its fleet system restores
+fighters, Ship Yards, and ground units of the latter. Its fleet system restores
 *Imperium*'s beam/missile and range contest on top of the newer counters and
 d10 combat engine. A custom shared deck adds operational surprises.
 

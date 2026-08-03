@@ -9,8 +9,10 @@ player chooses combat results in an actual game.
 The players use a deliberately aggressive but legal deployment. Terra places
 its three Beam Scouts at Junction and its other units at connected Terran
 sites. The Imperium places one Mixed Scout and one Mixed Destroyer at
-Shuruppak, with its remaining units elsewhere on its connected network. No
-Base or Ground Unit is at Shuruppak. All starting ships are supplied.
+Shuruppak, with its remaining units elsewhere on its connected network. Terra
+has one Ship Yard at each of its three Worlds; the Imperium has one at each of
+its four Worlds. No Base, Ship Yard, or Ground Unit is at Shuruppak. All
+starting ships are supplied.
 
 Terra's revealed hand contains \textit{Tactics} and two cards that will not be
 used this turn. The Imperial player has two cards but saves both.
@@ -46,8 +48,8 @@ RU before maintenance & 32 & 27 \\
 
 \subsubsection{Maintenance}
 
-Maintenance equals Hull Size. Bases, Ground Units, and Fleet Trains are free.
-All ships are supplied, so there is no surcharge.
+Maintenance equals Hull Size. Bases, Ship Yards, Ground Units, and Fleet
+Trains are free. All ships are supplied, so there is no surcharge.
 
 \begin{tabularx}{\columnwidth}{@{}Xrr@{}}
 \toprule
@@ -73,6 +75,13 @@ Terra buys one Destroyer for its printed cost of 9 RU and assigns it a
 saving 2 RU. The Imperium buys a 9-RU Destroyer, assigns it a
 \textbf{Mixed Package}, and saves 3 RU. All four purchases are placed on Game
 Turn 2; none can move or fight this turn.
+
+Ship Yard capacity is checked when production arrives, not when it is bought.
+On Game Turn 2, Terra can place the Hull-1 Destroyer at one Terran Ship Yard
+and the Hull-1 Fleet Train at another; the Outpost requires no capacity and
+enters the unplaced pool. The Imperial Hull-1 Destroyer can use any one of the
+four Imperial Ship Yards. A single starting yard could not receive a Hull-2
+Cruiser; two yards would first have to be concentrated in the same system.
 
 \begin{center}
 \begin{tikzpicture}[
@@ -257,13 +266,16 @@ Temporary combat markers are removed. No World was neutralized and no site
 changed ownership, so Glory remains 5. The Terran marker is 1 and the Imperial
 marker is 10; neither has reached Glory. Game Turn 2 will begin with the new
 Destroyers, Terran Fleet Train, and Terran unplaced Outpost arriving during
-Completed Production.
+Completed Production. The ships and Fleet Train must be allocated to Ship
+Yards with enough construction capacity.
 
 \subsection{Turn 1 Lessons}
 
 \begin{itemize}
   \item Income is collected before maintenance and new production; newly
     purchased units do not appear immediately.
+  \item Each Ship Yard supplies one Hull Size point when completed production
+    arrives. Capacity combines within a system, not across the map.
   \item Armament Packages create different preferred ranges without replacing
     the printed \SpaceEmpires\ combat values.
   \item Point Defense can be valuable even when its escort had no legal

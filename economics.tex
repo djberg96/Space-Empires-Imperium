@@ -38,8 +38,9 @@ after the normal total is known.
 
 Pay maintenance for every ship already on the map. The cost of one ship is its
 printed Hull Size in RU, as in \SpaceEmpires. Fighters pay maintenance;
-Fleet Trains, Bases, and Ground Units do not. A Carrier and its Fighters are
-maintained separately. Each unsupplied ship costs one additional RU.
+Fleet Trains, Bases, Ship Yards, and Ground Units do not. A Carrier and its
+Fighters are maintained separately. Each unsupplied ship costs one additional
+RU.
 
 The owner chooses the order of payment. Any ship not maintained is scrapped
 immediately; reduce or remove its group. Existing damage does not reduce its
@@ -49,12 +50,28 @@ the next Game Turn.
 \subsection{Completed Production}
 
 Move units due on the current Game Turn from the production track to the map.
-A ship appears at any connected friendly World. A Base or Ground Unit appears
-on any friendly, unneutralized World. An Outpost appears in the owner's
-unplaced pool and must be transported to its destination.
+Each operational Ship Yard at a connected, friendly, unneutralized World
+provides one Hull Size point of construction capacity during this step. Ship
+Yards in the same system combine their capacity; capacity cannot be combined
+between systems.
 
-If no legal arrival location exists, delay the unit to the next Game Turn. A
-delayed unit is not lost if the war ends; it carries into the peace process.
+Each arriving ship, Fighter, or Fleet Train must be placed in a system with
+enough unused Ship Yard capacity and consumes capacity equal to its printed
+Hull Size, with a minimum of one. A Base or Ground Unit appears on any
+friendly, unneutralized World and uses no Ship Yard capacity. An Outpost
+appears in the owner's unplaced pool and must be transported to its
+destination.
+
+A completed Ship Yard may be placed on a connected, friendly, unneutralized
+primary World and uses no construction capacity. No more than one new Ship
+Yard may be placed on the same World during a single Completed Production
+step. A Ship Yard that arrives during this step provides no capacity until the
+next Game Turn.
+
+The owner chooses the order in which completed units use capacity. If no legal
+arrival location or sufficient capacity exists, delay that unit to the next
+Game Turn. A delayed unit is not lost if the war ends; it carries into the
+peace process.
 
 \subsection{Purchasing Units}
 
@@ -70,13 +87,26 @@ Place purchases on the Game Turn track:
 
 \begin{itemize}
   \item Ground Units, Fighters, Transports, Scouts, Destroyers, Cruisers,
-    Carriers, Bases, Fleet Trains, and Outposts arrive next Game Turn.
+    Carriers, Bases, Ship Yards, Fleet Trains, and Outposts arrive next Game
+    Turn.
   \item Battlecruisers, Battleships, and Dreadnoughts arrive two Game Turns
     later.
 \end{itemize}
 
 A purchase scheduled after Game Turn 5 is retained for the interwar sequence.
 Technology cannot be purchased during a war.
+
+\subsection{Ship Yards}
+
+A Ship Yard represents the orbital docks and industrial infrastructure needed
+to construct starships. It uses its printed combat values and a fixed Beam
+Package. It is combat-capable but cannot move, react, serve as a Picket, or
+retreat. It costs no maintenance.
+
+Ship Yards cost their printed \SpaceEmpires\ price. They are built by a World,
+not by another Ship Yard, and therefore do not consume construction capacity.
+A primary World may contain more than one Ship Yard, although only one new
+Ship Yard may arrive there in a particular Game Turn.
 
 \subsection{Bases and Outposts}
 
