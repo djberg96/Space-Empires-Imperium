@@ -1,0 +1,275 @@
+\clearpage
+\section{EXAMPLE OF PLAY: GAME TURN 1}
+
+This example follows the \textit{First Shots} scenario and its first-play
+simplifications. Political rolls and Appeals are omitted, both players receive
+5 extra RU, and hands are revealed. The named die rolls are illustrative; no
+player chooses combat results in an actual game.
+
+The players use a deliberately aggressive but legal deployment. Terra places
+its three Beam Scouts at Junction and its other units at connected Terran
+sites. The Imperium places one Mixed Scout and one Mixed Destroyer at
+Shuruppak, with its remaining units elsewhere on its connected network. No
+Base or Ground Unit is at Shuruppak. All starting ships are supplied.
+
+Terra's revealed hand contains \textit{Tactics} and two cards that will not be
+used this turn. The Imperial player has two cards but saves both.
+
+\subsection{A. Advance the Clocks}
+
+The Terran Turn marker advances from 0 to 1 and the Imperial marker falls from
+11 to 10. Glory remains 5. Neither marker is checked for victory until the End
+Phase.
+
+\subsection{B. Joint Logistics Phase}
+
+\subsubsection{Income}
+
+Every starting site can trace through friendly Worlds and Outposts to its
+capital. Terra receives 8 RU for each of three connected Worlds and 1 RU for
+each of three connected Outposts. The Imperium receives its 10 RU provincial
+budget and 3 RU for each of four connected Worlds; Imperial Outposts produce
+no RU. Each side then adds the learning-game bonus.
+
+\begin{tabularx}{\columnwidth}{@{}Xrr@{}}
+\toprule
+Turn 1 income & Terra & Imperium \\
+\midrule
+Worlds & $3\times8=24$ & $4\times3=12$ \\
+Outposts & $3\times1=3$ & 0 \\
+Provincial budget & 0 & 10 \\
+Learning-game bonus & 5 & 5 \\
+\midrule
+RU before maintenance & 32 & 27 \\
+\bottomrule
+\end{tabularx}
+
+\subsubsection{Maintenance}
+
+Maintenance equals Hull Size. Bases, Ground Units, and Fleet Trains are free.
+All ships are supplied, so there is no surcharge.
+
+\begin{tabularx}{\columnwidth}{@{}Xrr@{}}
+\toprule
+Starting ships & Terra & Imperium \\
+\midrule
+SC, DD & $3+2$ & $2+3$ \\
+CA, BC & $2+0$ & $4+2$ \\
+CV, Fighters & $1+2$ & $1+2$ \\
+Transports & 2 & 1 \\
+\midrule
+Maintenance paid & 12 & 15 \\
+RU remaining & 20 & 12 \\
+\bottomrule
+\end{tabularx}
+
+\subsubsection{Cards, Arrivals, and Production}
+
+Both hands already equal their minimum size, so neither side draws or buys a
+card. Nothing is scheduled to arrive on Game Turn 1.
+
+Terra buys one Destroyer for its printed cost of 9 RU and assigns it a
+\textbf{Beam Package}. Terra also buys a 5-RU Fleet Train and a 4-RU Outpost,
+saving 2 RU. The Imperium buys a 9-RU Destroyer, assigns it a
+\textbf{Mixed Package}, and saves 3 RU. All four purchases are placed on Game
+Turn 2; none can move or fight this turn.
+
+\begin{center}
+\begin{tikzpicture}[
+  box/.style={draw,rounded corners=2pt,align=center,minimum width=2.2cm,
+    minimum height=0.75cm,font=\scriptsize},
+  arr/.style={-{Latex[length=2mm]},thick}
+]
+  \node[box,fill=Cyan!12] (ti) {Terra\\32 RU};
+  \node[box,fill=Cyan!12,right=0.35cm of ti] (tm) {$-12$ maintenance\\20 RU};
+  \node[box,fill=Cyan!12,below=0.3cm of tm] (tb) {$-9$ DD, $-5$ Train\\$-4$ Outpost; save 2};
+  \draw[arr,Cyan!70!black] (ti) -- (tm);
+  \draw[arr,Cyan!70!black] (tm) -- (tb);
+
+  \node[box,fill=BrickRed!12,below=0.3cm of ti] (ii) {Imperium\\27 RU};
+  \node[box,fill=BrickRed!12,below=0.3cm of ii] (im) {$-15$ maintenance\\12 RU};
+  \node[box,fill=BrickRed!12,right=0.35cm of im] (ib) {$-9$ DD\\save 3};
+  \draw[arr,BrickRed!75!black] (ii) -- (im);
+  \draw[arr,BrickRed!75!black] (im) -- (ib);
+\end{tikzpicture}
+\end{center}
+
+\subsection{C. Terran Player Turn}
+
+\subsubsection{First Movement: the Shuruppak Raid}
+
+The three Beam Scouts at Junction form one stack and jump through Southern
+Cross to Sirius. There they split: one Scout stops at Sirius as a reserve while
+two continue through Mackhashi and Tau Ceti before entering Shuruppak on their
+fifth jump. Each intermediate system is empty. This movement is legal because
+a stack composed entirely of Scouts may refuel in any system. An ordinary
+mixed fleet would have to stop one jump beyond its last friendly refuelling
+site.
+
+Entering Shuruppak reveals the Imperial Mixed Scout and Mixed Destroyer and
+ends the two-Scout raiding stack's movement. Space combat is mandatory.
+
+\begin{center}
+\begin{tikzpicture}[
+  sys/.style={circle,draw,minimum size=6.5mm,inner sep=0pt,font=\scriptsize},
+  route/.style={draw=ForestGreen!75!black,line width=1.1pt,
+    -{Latex[length=1.7mm]}},
+  lab/.style={font=\scriptsize,align=center}
+]
+  \node[sys,fill=Cyan!18] (j) at (0,0) {0};
+  \node[sys] (sc) at (1.15,0.55) {1};
+  \node[sys] (si) at (2.3,0) {2};
+  \node[sys] (ma) at (3.45,0.55) {3};
+  \node[sys] (tc) at (4.6,0) {4};
+  \node[sys,fill=BrickRed!18] (sh) at (5.75,0.55) {5};
+  \draw[route] (j)--(sc);
+  \draw[route] (sc)--(si);
+  \draw[route] (si)--(ma);
+  \draw[route] (ma)--(tc);
+  \draw[route] (tc)--(sh);
+  \node[lab,below=1mm of j] {Junction\\3 Beam SC};
+  \node[lab,above=1mm of sc] {Southern\\Cross};
+  \node[lab,below=1mm of si] {Sirius\\1 SC stops};
+  \node[lab,above=1mm of ma] {Mackhashi};
+  \node[lab,below=1mm of tc] {Tau Ceti};
+  \node[lab,above=1mm of sh] {Shuruppak\\2 SC vs SC+DD};
+\end{tikzpicture}
+\end{center}
+
+The numbered circles show jumps, not movement costs. The route drawing is a
+schematic of the printed map rather than a replacement for it.
+
+\subsubsection{First Combat: Round 1 at Long Range}
+
+Terra is the attacker. The initial range is Long. Each side has two ships, so
+there is no screening or Fleet Size Bonus.
+
+Before the first firing round, Terra plays \textit{Tactics}, raising its
+Tactics from 0 to 1 for this entire battle. Its once-per-round attack reroll is
+available, although Terra will not need it in the example.
+
+One Terran Beam Scout performs Point Defense for its group. It forfeits
+offensive fire, which costs nothing because Beam ships cannot fire at Long
+Range, and the group gains +1 Defense against missiles.
+
+The Imperial Mixed Destroyer has printed Attack 4, reduced to 3 for Mixed
+missile fire at Long Range. Against Scout Defense 0 and Point Defense +1, its
+Hit Number is $3-0-1=2$; a roll of 4 misses. The Mixed Scout's adjusted Attack
+is 2, giving a Hit Number of 1. It rolls a natural 1 and destroys one Hull-1
+Terran Scout. Terra removes the non-escort Scout. Its remaining Beam ship has
+no legal fire, so the round ends with one Terran ship against two Imperial
+ships.
+
+\subsubsection{Round 2: Terra Closes}
+
+Both players select a Scout Picket, worth +2 Maneuver. Terra rolls 7, for
+$7+2+1+1=11$; the final +1 is for having the smaller non-Fighter fleet. The
+Imperium rolls 4, for $4+2+1=7$. Terra chooses Close Range.
+
+The Imperium now has two ships to one. It screens its Destroyer, forcing the
+Terran Scout to target the unscreened Scout. Screening leaves only one
+unscreened Imperial ship, however, so the Imperium gives up what would
+otherwise have been a $2{:}1$ Fleet Size Bonus.
+
+At Close Range beams fire by class before short-range missiles. The Mixed
+Destroyer fires at Class D with adjusted Attack 3 but rolls 6 and misses. At
+Class E both sides have Tactics 1, so the Imperial defender fires first. Its
+Mixed Scout has adjusted Attack 2 and rolls 5, missing.
+
+The Terran Beam Scout attacks at its full printed Attack 3. The Destroyer is
+screened, so it must target the Defense-0 Imperial Scout. It rolls 2 and
+destroys that ship with one hit. Because the Imperial Scout chose beam fire,
+it could not also make a short-range missile attack had it survived.
+
+\subsubsection{Round 3: Missile Range Restored}
+
+Terra rolls $3+2+1=6$ for Range Control. The surviving Imperial Destroyer uses
+its +1 Picket rating and Tactics 1. It rolls $8+1+1=10$ and chooses Long Range.
+
+Neither side can screen or claim Fleet Size. The Terran Scout again performs
+Point Defense. The Imperial Destroyer declares High-Intensity Missile Fire:
+printed Attack 4, $-1$ for its Mixed Package, and $+1$ for high intensity.
+After Point Defense, its Hit Number is $4-0-1=3$. It rolls 2 and destroys the
+last raiding Scout before that Scout's Class E opportunity to retreat. The
+Imperium retains Shuruppak.
+
+\begin{center}
+\begin{tikzpicture}[
+  rnd/.style={draw,rounded corners=2pt,align=left,text width=5.8cm,
+    inner sep=3pt,font=\scriptsize},
+  flow/.style={-{Latex[length=1.7mm]},thick}
+]
+  \node[rnd,fill=BrickRed!10] (r1) {\textbf{Round 1 --- Long:}
+    Imperial missiles destroy 1 of 2 raiding Beam Scouts.};
+  \node[rnd,fill=Cyan!10,below=2mm of r1] (r2) {\textbf{Round 2 --- Close:}
+    Terra wins Range Control and destroys the unscreened Mixed Scout.};
+  \node[rnd,fill=BrickRed!10,below=2mm of r2] (r3) {\textbf{Round 3 --- Long:}
+    the Mixed DD wins range and destroys the last raider with HIMF.};
+  \draw[flow] (r1)--(r2);
+  \draw[flow] (r2)--(r3);
+\end{tikzpicture}
+\end{center}
+
+\subsubsection{Reaction Movement and Combat}
+
+The Imperial player uses the surviving Mixed Destroyer as the one reacting
+stack. It jumps from Shuruppak through Tau Ceti and Mackhashi to Sirius, where
+it must stop upon encountering the reserve Terran Scout. Three jumps exactly
+equal the Imperial Reaction Allowance. The reacting Destroyer is the only
+Imperial unit permitted to attack in the Reaction Combat Phase.
+Its Missile Depleted marker was removed at the end of the preceding Combat
+Phase, so it may make another missile attack in this new phase.
+
+The new battle begins at Long Range. The Terran Scout uses Point Defense; the
+Mixed Destroyer's Attack 3 missile therefore has a Hit Number of 2 and its roll
+of 7 misses. In round two, Terra rolls $9+2=11$ for Range Control; the Imperium
+rolls $4+1+1=6$. Terra chooses Close. The Class D Mixed Destroyer fires first
+with adjusted Attack 3, but rolls 8 and misses. At Class E the Terran Beam
+Scout rolls a natural 1 and destroys the Hull-1 Destroyer. The attempted
+pursuit has cost the Imperium its remaining forward ship.
+
+\subsubsection{Second Movement and Combat}
+
+The surviving reserve Scout returns from Sirius through Southern Cross to
+Junction in the Second Movement Phase. Terra has no contested system in its
+Second Combat Phase.
+
+The Shuruppak Outpost remains Imperial because no Terran ship remains in orbit.
+Even if a Scout had survived, bombardment alone could only remove temporary
+Militia; it could not capture the surface. Capturing the Outpost requires a
+later fleet with a Transport and surviving troops to pay the occupation cost.
+
+\subsection{D. Imperial Player Turn}
+
+The Imperium uses its two Movement Phases to shift its Carrier, Fighters, and
+main surface force toward the Shuruppak corridor. A Fleet Train can move only
+one jump in each phase and provides refuelling only when it has not moved in
+that particular phase, so the main fleet does not reach Terran space this
+turn. Terra declines Reaction Movement. No further combat occurs.
+
+This illustrates why the Scout raid was possible while a combined fleet was
+not: self-refuelling is a Scout ability, not a property of every stack that
+contains a Scout.
+
+\subsection{E. End Phase}
+
+Temporary combat markers are removed. No World was neutralized and no site
+changed ownership, so Glory remains 5. The Terran marker is 1 and the Imperial
+marker is 10; neither has reached Glory. Game Turn 2 will begin with the new
+Destroyers, Terran Fleet Train, and Terran unplaced Outpost arriving during
+Completed Production.
+
+\subsection{Turn 1 Lessons}
+
+\begin{itemize}
+  \item Income is collected before maintenance and new production; newly
+    purchased units do not appear immediately.
+  \item Armament Packages create different preferred ranges without replacing
+    the printed \SpaceEmpires\ combat values.
+  \item Point Defense can be valuable even when its escort had no legal
+    offensive shot.
+  \item Range Control can reverse the advantage from round to round.
+  \item Reaction Movement creates a real counterstroke, but only reacting
+    ships may attack in its Combat Phase.
+  \item Space victory and surface conquest are separate achievements.
+\end{itemize}

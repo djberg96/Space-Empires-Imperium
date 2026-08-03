@@ -9,8 +9,8 @@ d10 combat engine. A custom shared deck adds operational surprises.
 
 The current rules are a version 0.1 playtest draft. They include a complete
 opening scenario, campaign rules, a card manifest adapted to the new combat
-engine, and a player aid. See `DESIGN_NOTES.md` for the design assumptions and
-the first-playtest checklist.
+engine, an illustrated Game Turn 1 example, and a player aid. See
+`DESIGN_NOTES.md` for the design assumptions and the first-playtest checklist.
 
 ## Build the rulebook
 
