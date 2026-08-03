@@ -1,0 +1,101 @@
+\clearpage
+\section{PLAYER AID}
+\small
+
+\subsection{Game Turn}
+
+\begin{tabularx}{\columnwidth}{@{}lX@{}}
+\toprule
+A & Advance Terran marker up 1; Imperial marker down 1. \\
+B & Joint Logistics: politics, connections/income, maintenance, cards,
+arrivals, purchases. \\
+C & First Player: Move, Combat, enemy Reaction Move/Combat, Move, Combat. \\
+D & Second Player repeats the same sequence. \\
+E & Clear temporary effects, recover unsupported Worlds, apply delayed Glory,
+check victory. \\
+\bottomrule
+\end{tabularx}
+
+\subsection{Economy and Supply}
+
+\begin{tabularx}{\columnwidth}{@{}Xrr@{}}
+\toprule
+Income source & Terra & Imperium \\
+\midrule
+Budget & 0 & 10 \\
+Connected World & 8 & 3 \\
+Unconnected World & 6 & 1 \\
+Connected Outpost & 1 & 0 \\
+\bottomrule
+\end{tabularx}
+
+Connection paths run through friendly Worlds, Outposts, and Fleet Trains;
+enemy combat ships and neutralized sites block them. Ship maintenance equals
+Hull Size per ship. Unsupplied ships cost +1 RU and move at most one jump per
+Movement/Reaction Phase. Repair at a connected World for 1 RU per hit.
+
+\subsection{Movement}
+
+A normal stack has unlimited jumps but must refuel before leaving each entered
+system. Friendly Worlds, Outposts, and stationary Fleet Trains refuel; all-Scout
+stacks self-refuel. Enemy combat ships stop movement. Reaction moves one stack
+up to the side's allowance (Terra 2, Imperium 3 initially). Fighters need a
+base or Carrier; Transports carry six Ground Units.
+
+\subsection{Space Combat}
+
+\begin{tabularx}{\columnwidth}{@{}lXX@{}}
+\toprule
+Package & Long Range & Close Range \\
+\midrule
+Beam & --- & Beam full \\
+Missile & Missile full & Missile $-1$, after beams \\
+Mixed & Missile $-1$ & Beam $-1$ or missile $-2$ \\
+\bottomrule
+\end{tabularx}
+
+\begin{enumerate}
+  \item Reveal groups, packages, and technology. Friendly Bases join.
+  \item Round 1 is Long. In later rounds, both sides roll d10 + Picket +
+    Tactics; the smaller non-Fighter fleet adds +1. High side chooses range; a
+    tie retains it. Then screen; 2:1 unscreened ships earns +1 Attack.
+  \item Picket: SC +2, DD +1, CA/CV/TR 0, BC/BB/DN $-1$, none $-2$.
+  \item Declare reactions. A Beam/Mixed SC or DD escort forfeits fire to give
+    one group +1 Defense vs missiles (+2 at Point Defense 2+). A ship may
+    forfeit fire to gain +1 Defense vs beams by dispersing sand.
+  \item Long: missiles A--E. Close: beams A--E, then short missiles A--E.
+    Higher Tactics wins class ties; defender wins remaining ties.
+  \item Hit Number = package-adjusted Attack + Attack Tech + Fleet Bonus
+    $-$ Defense $-$ Defense Tech $-$ reactions. Roll d10 at or below; a
+    natural 1 always hits. Hull Size hits destroy a ship.
+  \item A missile ship may gain +1 Attack, then is Missile Depleted for the
+    Combat Phase. At Close Range, an SC, DD, or Fighter may risk defensive
+    beam fire to make a +1 Attack Close Assault.
+  \item From round 2, a group may retreat instead of firing at its class.
+\end{enumerate}
+
+Space Marines may land after space round one; all Ground Units after round two.
+
+\subsection{Planetary Operations}
+
+Outpost/World/Capital generates 1/5/8 Militia. Orbital victor may bombard before
+landing; each hit removes one Militia for this Combat Phase only. Permanent
+Ground Units give surface Defense 1 (one--three units) or 2 (four or more).
+
+Ground combat uses printed Attack, Defense, Hull, and firing class. Defender
+fires first on class ties. No Tactics or Fleet Size. No retreat. Remove one
+surviving attacker to occupy: replace a captured Outpost or neutralize a World.
+Another Ground Unit or enemy Outpost must remain to hold a neutralized World.
+
+\subsection{Glory Clock}
+
+Imperial capture/loss of an Outpost changes Glory $+1/-1$; neutralizing a World
+changes it $+4/-4$. In the End Phase, Terra wins the war if its rising Turn
+marker reaches Glory; the Imperium wins if its falling marker reaches Glory.
+Capital neutralization wins the campaign immediately.
+
+\subsection{Technology Limits}
+
+In-war research is prohibited. Interwar DP improve Attack, Defense, Tactics,
+Fighter, Point Defense, Ground Combat, Capital Construction, or Reaction
+Command. Capital Construction 0/1/2/3 allows CA/BC/BB/DN respectively.

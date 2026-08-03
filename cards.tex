@@ -1,254 +1,195 @@
-\section{IMPERIUM CARDS}
-\hfill
+\section{THE IMPERIUM DECK}
 
-This variant adds a deck of cards (henceforth the Imperium Deck) that both players will use over the course of the game. These cards can affect movement, production and combat in various ways. Imperial Intervention and Appeals to the Emperor are also altered slightly for use with these cards.
+The shared 42-card deck represents intelligence, political favors, operational
+plans, and friction. Keep hands secret. The manifest below is authoritative;
+card faces abbreviate these clarifications where space requires.
 
-This adds a bit of flavor and chaos to the game and, hopefully, makes the game a bit more interesting.
+\subsection{Starting Hands}
 
-\subsection{Start of Play}
+At the start of a war, Terra draws one card per friendly controlled World. The
+Imperium draws one card per two friendly controlled Worlds, rounded up. This is
+that side's \textbf{minimum hand size} for the war. In \textit{First Shots},
+Terra begins with three cards and the Imperium with two.
 
-Shuffle the cards in the Imperium Deck and place it face down somewhere within easy reach of both players. All cards in the Imperium Deck remain face down until drawn.
+The hand limit is the number of connected friendly Worlds and Outposts. If a
+player exceeds it, discard immediately to the limit. A minimum hand size never
+forces a hand above its current limit.
 
-\subsection{Deal the Cards}
+\subsection{Card Step}
 
-At the start of a war, the Terran player receives cards from the Imperium Deck equal to the number of friendly controlled Worlds. The Imperial player receives cards equal to \textit{half} the number of friendly controlled Worlds, rounded up (the rest were taxed by the Emperor). This is considered your minimum hand size.
+In the Draw, Discard, and Purchase Cards step, draw until reaching the minimum
+hand size. Then a player may discard unwanted cards for 1 RU each and buy cards
+for 5 RU each. Discards happen before purchases. A purchased card cannot be
+discarded in the same Logistics Phase.
 
-\textit{For the first scenario, for example, each player would receive three cards.}
+When the deck is empty, shuffle the face-up discard pile to form a new deck.
+If a card instructs an earlier reshuffle, include that card unless stated
+otherwise.
 
-The cards in your hand are secret and should be kept hidden from your opponent until played.
+\subsection{Playing Cards}
 
-\subsection{Drawing More Cards}
+A card can be played only at its listed timing. Each player may play at most
+one card in a particular phase or combat substep. The attacker declares a card
+first in combat; the First Player declares first at other shared timings. If
+effects conflict, resolve the card played later after applying prohibitions.
 
-During each player's maintenance and production phase the active player draws a number of cards that brings them back up to their minimum hand size (if below the minimum).
-
-After drawing up to their minimum hand size the active player may discard cards for 1 RU each. Cards discarded in this fashion are not replaced until the following turn.
-
-The active player may also buy additional cards at a cost of 5 RU per card. You may not discard a card that you purchased for RU in the same turn that you purchased it. You must pay to discard any cards that you wish discarded before purchasing more.
-
-\subsection{Playing the Cards}
-
-A card may only be played during the phase specified at the top of the card. Each player may only play one card per phase or sub-phase, e.g. you could play one battle card during the space combat sub-phase, and one during the surface combat sub-phase.
-
-In battle, the attacker plays their card first. In other phases, the first player (e.g. the Terran player in the First War scenario) plays their card first.
-
-When playing a card from your hand refer to the event section of the card for its effects. The text here may include additional clarifications that were not practical to include on the card itself.
-
-\subsection{Hand Size Limit}
-
-You hand size limit is equal to the maximum number of connected worlds and outposts that you control. If you draw cards in excess of this number, you must immediately discard down to your hand size limit.
-
-\subsection{Discards and Reshuffling}
-
-Cards played over the course of the game are placed into a discard pile. The moment the last card is drawn from the deck, reshuffle all of the discarded back into the Imperium Deck.
-
-\textit{Note that some cards may also cause the discarded cards to be reshuffled back into the deck earlier than expected!}
-
-Discarded cards are face up and may be inspected at any time.
+After resolving a card, discard it face up. A player must satisfy every stated
+requirement. Effects that choose ``ships'' choose individual ships even when a
+numeral marker represents several ships in one group.
 
 \subsection{Between Wars}
 
-Cards may not be held between wars. Any cards still in your hand at the end of the final turn of the game must either be discarded for +3 RU each (available at the start of the next war), or used to automatically pay the maintenance cost of a ship instead of rolling, one card per ship.
-
-\textit{Exception: you must discard 2 cards to automatically pay the maintenance of a Battleship.}
+Cards do not carry into the next war. For each card left in hand, choose one:
+gain 3 RU for interwar production, or prevent one ship's attrition roll. Two
+cards are required to protect a BB or DN. Then discard all hands and calculate
+new starting hands after deployment.
 
 \subsection{Card Manifest}
 
-Below is a description of each card in the deck, when it can be played, and the quantity in parenthesis. Any clarifications are also included.
+\subsubsection{A Call to Arms (2)}
 
-In the interests of brevity, the term "sub-phase" has been dropped, e.g. "Space Combat" refers to the Space Combat Sub-phase, and the term "PS/SI" refers to the Planetary Surface/Surface Interaction Sub-phase.
+\textbfit{Combat --- start of the second firing round.} Ships from one adjacent
+system may enter this battle. At least one of your original combat-capable
+ships must have survived round one. Bases cannot move; Fighters require
+Carrier capacity. The reinforcements did not move for purposes of later
+reaction eligibility.
 
-High Intensity Missile Fire is abbreviated as "HIMF". Short Range Missile Fire is abbreviated as "SRMF".
+\subsubsection{Close the Range (2)}
 
-\subsubsection{A Call to Arms} (2)
+\textbfit{Space Combat --- before the first firing round.} The first firing
+round is at Close Range instead of Long Range. Resolve beam fire first, then
+short-range missile fire with its normal penalties.
 
-\textbfit{When: Space Combat, at start of second round of combat}
+\subsubsection{Commandos (2)}
 
-Your ships from a single, adjacent, connected system may join a battle at the start of the 2nd round of combat.
+\textbfit{Planetary Operations --- when landing.} Move up to three Infantry
+from one friendly surface in an adjacent system directly to the invaded
+surface. They require no Transport and may fire in the first ground round.
 
-\textit{Requirement: Have at least 1 surviving ship at the end of the first round of combat.}
+\subsubsection{Confused Fighting (1)}
 
-\textit{Exception: Monitors may not use this event.}
+\textbfit{Space Combat --- before first-round screening.} Skip Range Control
+for this battle. When each ship fires, treat the range as optimal for its
+chosen weapon:
+Beam and Missile Packages use full Attack, while a Mixed Package uses $-1$.
+Resolve beam classes A--E and then missile classes A--E, regardless of the
+current band. This affects both sides. After every combat in the current Combat
+Phase is complete, shuffle the discard pile into the deck.
 
-\subsubsection{Close the Range} (2)
+\subsubsection{Direct Hit (2)}
 
-\textbfit{When: Start of Space Combat}
+\textbfit{Space Combat --- after rolling.} Change one of your attack dice to a
+natural 1. Then draw one card. The die must have been part of a legal attack.
 
-Treat all missile fire by your opponent as \textit{Short Range Missile Fire} during this space combat when at long range.
+\subsubsection{Economic Boom (2)}
 
-This event has no effect at short range.
+\textbfit{Logistics --- after connections are determined.} Each connected
+friendly Outpost produces one additional RU this turn. The Imperial player may
+instead cancel a Depression result before its RU or card loss is applied.
 
-\textit{Clarification: Short Range Missile Fire still fires after beam weapons at half strength when at short range.}
+\subsubsection{Electronic Warfare (2)}
 
-\subsubsection{Commandos} (2)
+\textbfit{Space Combat --- after groups are revealed.} Choose up to three enemy
+groups. In the first firing round, each chosen group fires one class later
+(Class E remains E).
 
-\textbfit{When: PS/SI}
+\subsubsection{Escape Plan (1)}
 
-During this combat your regular troops may land without a transport.
+\textbfit{Combat --- before a firing round.} Retreat every one of your ships
+from the battle to the same legal adjacent system without enemy fire. If you
+retreat from a friendly World, adjust Glory one point in the opponent's favor:
+$-1$ for an Imperial retreat or $+1$ for a Terran retreat.
 
-Your jump troops may not be fired on by PD units or Outposts.
+\subsubsection{Flank Speed (2)}
 
-\textit{Clarification: Worlds still fire on jump troops. Regular troops that land in this fashion do \textbf{not} receive a +1 modifier in their favor against planetary defense fire.}
+\textbfit{Reaction Movement.} One reacting stack may make three more jumps
+than its current Reaction Allowance, to a maximum of six. Refuelling and enemy
+interception still apply.
 
-\subsubsection{Confused Fighting} (1)
+\subsubsection{Intel (2)}
 
-\textbfit{When: Start of Space Combat}
+\textbfit{Any time except combat.} Look at the opponent's hand, choose one card,
+and discard it.
 
-Do not make range determination rolls this combat. Every ship may fire at whatever range it wishes, using either missile or beam factors.
+\subsubsection{Logistics (2)}
 
-Suicide attacks are automatically successful if they survive defensive fire.
+\textbfit{Logistics --- before maintenance.} Gain 5 RU. One friendly stack is
+treated as supplied for maintenance and movement throughout this Game Turn.
 
-Reshuffle the deck after the current Combat Phase is complete.
+\subsubsection{Mass Drivers (2)}
 
-\textit{Clarification: Both players are affected. Neither player may use HIMF or SRMF when this card is played.}
+\textbfit{Bombardment.} Before normal bombardment, make one bonus Attack 7
+against the surface. Apply its Defense but no ship technology or Fleet Size.
+On a hit, remove one Militia.
 
-\subsubsection{Direct Hit} (2)
+\subsubsection{Minefield (2)}
 
-\textbfit{When: Any time during Space Combat}
+\textbfit{Space Combat --- before defensive reactions.} Play only in a system
+containing a friendly World or Outpost. Randomly select two enemy ships, or
+every enemy ship if fewer than two are present. After reactions are declared,
+make a separate Missile Attack 5 against each, subtracting its normal Defense,
+Defense Tech, and Point Defense. Each hit causes one damage.
 
-After rolling the dice, convert any single dr that is less than a 6 as a 6.
+\subsubsection{Overrun (1)}
 
-Draw another card.
+\textbfit{Immediately after Space Combat.} If every enemy ship was destroyed
+or retreated, one victorious stack may make one jump. Resolve any new battle
+immediately. The stack cannot refuel during this jump and Fleet Trains cannot
+take part.
 
-\textit{Clarification: Note that this card would not necessarily do any damage if your opponent's screens are too high!}
+\subsubsection{Queued Up (2)}
 
-\subsubsection{Economic Boom} (2)
+\textbfit{Reaction Movement.} Move up to three reacting stacks instead of one.
+Each uses the normal Reaction Allowance and all usual restrictions.
 
-\textbfit{When: Start of Maintenance and Production}
+\subsubsection{Reckless Attack (2)}
 
-Each of your Outposts produces +1 RU this turn.
+\textbfit{Combat --- before one firing round.} As each of your ships fires, you
+may give it +2 Attack for that shot. Until the end of the round, enemy attacks
+against that ship receive +1 Attack. Mark participating ships as necessary.
 
-Imperial player only: May instead be played to cancel a Depression when rolling for Imperial Intervention.
+\subsubsection{Resistance (2)}
 
-\subsubsection{Electronic Warfare} (2)
+\textbfit{Ground Combat --- before the first round.} Every defending permanent
+Ground Unit receives +1 Attack and +1 Defense in the first two rounds. Militia
+receive +1 Attack only.
 
-\textbfit{When: Space Combat, after ship assignment}
+\subsubsection{Sabotage (1)}
 
-Immediately disrupt up to 3 enemy ships that are not in reserve.
+\textbfit{Immediately after enemy production.} Choose an enemy ship group in a
+system containing an enemy Outpost adjacent to one of your Worlds or Outposts.
+Roll a d10; on 1--7, the group suffers one hit allocated by its owner. Then
+shuffle the entire discard pile, including this card, into the deck.
 
-\textit{Addenda: If using my scout variant rules, you may not target ships which have an attached scout.}
+\subsubsection{Snafu (2)}
 
-\subsubsection{Escape Plan} (1)
+\textbfit{Start of an enemy Player Turn.} Choose one system containing an enemy
+Outpost. Enemy stacks that begin a normal Movement Phase there may make no more
+than two jumps in that phase.
 
-\textbfit{When: Combat}
+\subsubsection{Standoff (2)}
 
-You may terminate combat without being fired upon. If used then \textbf{all} of your ships must retreat to the same area.
+\textbfit{Space Combat --- before the first firing round.} If both sides have a
+combat-capable ship after round one, combat ends. The attacker retreats all
+ships first, then the defender; no retreat fire occurs. A ship with no legal
+destination remains in the system.
 
-If terminating combat at a friendly World, immediately lose 1 Glory Point.
+\subsubsection{Supply Run (2)}
 
-\textit{Clarification: You are not obligated to play this card at the start of combat. You could fight a round of combat and see how it goes before deciding to play it. However, you must play it before dice are rolled before each battle round.}
+\textbfit{Start of your Movement Phase.} One stack ignores its supply movement
+penalty and need not refuel for its first three jumps this phase. Enemy ships
+still stop it.
 
-\subsubsection{Flank Speed} (2)
+\subsubsection{Surprise (2)}
 
-\textbfit{When: Reaction Movement}
+\textbfit{Space Combat --- before the first firing round.} Choose Long or Close
+Range for each of the first two firing rounds. Skip Range Control before round
+two. If opposing range-setting cards conflict, the defender chooses the range
+for round one and the attacker chooses it for round two.
 
-One stack may make an unlimited number of jumps during reaction movement instead of the normal 3.
+\subsubsection{Tactics (2)}
 
-\subsubsection{Intel} (2)
-
-\textbfit{When: Any time (except combat)}
-
-Look at your opponent's hand, choose one card and discard it.
-
-Play at any time before or after combat.
-
-\subsubsection{Logistics} (2)
-
-\textbfit{When: Maintenance and Production}
-
-Add 5 RP to your total, and add +1 to all maintenance rolls this turn.
-
-\subsubsection{Mass Drivers} (2)
-
-\textbfit{When: Combat (Bombardment)}
-
-You may combine missile and beam factors when bombarding a system.
-
-\subsubsection{Minefield} (2)
-
-\textbfit{When: Combat}
-
-Make a 12-pt missile attack against two random ships at the start of Space Combat.
-
-\textit{Clarification: This happens before placement.}
-
-\subsubsection{Overrun} (1)
-
-\textbfit{When: Immediately After Combat}
-
-If you have destroyed all enemy ships and/or all enemy ships have retreated, then your victorious fleet may make one more jump. This can potentially lead to another combat.
-
-\textit{Clarification: Any of your disrupted ships would still need to make a maintenance roll in order to take part in an Overrun move.}
-
-\subsubsection{Queued Up} (2)
-
-\textbfit{When: Reaction Movement}
-
-You may move up to 3 stacks (instead of the normal 1) during reaction movement.
-
-\subsubsection{Reckless Attack} (2)
-
-\textbfit{When: Combat}
-
-Each of your ships may add +2 to their combat roll, but each ship that does so suffers a +1 penalty when being fired at.
-
-\textit{Clarification: The decision is made at the moment of firing, after placement. Although combat is still simultaneous, the side that played this card should roll first if used.}
-
-\subsubsection{Resistance} (2)
-
-\textbfit{When: PS/SI}
-
-For this ground combat all of your defending regular troops add +2 to their rating, and your jump troops fire simultaneously against regular troops.
-
-\subsubsection{Sabotage} (1)
-
-\textbfit{When: Immediately after Maintenance and Production}
-
-Disrupt 1d6 enemy ships in any system containing an enemy outpost that is in or adjacent to one of your own worlds or outposts.
-
-Then reshuffle all discards (including this card) back into the Imperium Deck.
-
-\subsubsection{Snafu} (2)
-
-\textbfit{When: Start of Enemy Movement Phase}
-
-Choose any one system containing an enemy Outpost. Enemy ships in the designated system may only make up to 2 jumps this movement phase.
-
-\subsubsection{Standoff} (2)
-
-\textbfit{When: Combat}
-
-Both sides terminate combat at the end of the first round of combat and must leave the system, attacker first, if both sides still have at least one ship. Neither side may fire at retreating ships.
-
-\subsubsection{Supply Run} (2)
-
-\textbfit{When: Start of your Movement Phase}
-
-All of your disrupted ships are no longer disrupted.
-
-\subsubsection{Surprise} (2)
-
-\textbfit{When: Combat, Range Determination)} (2)
-
-Skip the range determination roll. Instead, you choose the range for every combat round.
-
-\textit{Clarification: This may even affect the first combat round.}
-
-\subsubsection{Tactics} (2)
-
-\textbfit{When: Combat}
-
-Add +1 to all range determination rolls this combat. This is in addition to the modifier for having the smaller force.
-
-Add +1 to the dr of all of your ships in space combat.
-
-\subsection{Imperial Intervention and Appeals to the Emperor}
-
-\subsubsection{Imperial Intervention}
-
-On a roll of "2" the Imperial player immediately loses one random card.
-
-On a roll of "10" the Imperial player immediately draws a card.
-
-\subsubsection{Appeals to the Emperor}
-
-On a roll of "6" the Imperial player immediately draws a card.
+\textbfit{Space Combat --- before the first firing round.} Treat your Tactics
+as one level higher for Range Control and firing-order ties in this battle.
+Once in each firing round, reroll one of your attack dice; the new result is
+final.

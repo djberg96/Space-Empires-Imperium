@@ -1,0 +1,228 @@
+\section{SPACE COMBAT}
+
+Space combat combines \Imperium's range and weapon decisions with the
+\SpaceEmpires\ firing order, attack and defense values, screening, and hull
+damage. Every combat round occurs at either \textbf{Long Range} or
+\textbf{Close Range}. Missiles dominate the approach; beams become decisive
+after fleets close.
+
+The two bands deliberately compress Traveller's more detailed scale. Picket
+ships and Tactics stand in for thrust, sensors, and fleet handling. Point
+defense lasers protect against missile salvos, while sandcaster reactions
+protect against direct-fire beams.
+
+\subsection{Armament Packages}
+
+Every SC, DD, CA, BC, BB, and DN group has one Armament Package. Record the
+package on its technology row. All ships in a group must have the same package.
+
+\begin{tabularx}{\columnwidth}{@{}lXX@{}}
+\toprule
+Package & Long Range & Close Range \\
+\midrule
+Beam (B) & Cannot fire & Beam at full Attack \\
+Missile (M) & Missile at full Attack & Missile at $-1$ Attack, after beams \\
+Mixed (X) & Missile at $-1$ Attack & Beam at $-1$, or missile at $-2$ after beams \\
+\bottomrule
+\end{tabularx}
+
+``Attack'' in this table means the printed Attack value before technology,
+Fleet Size, defense, and other modifiers. A modified Hit Number of zero or less
+still hits on a natural 1.
+
+Fighters have a fixed Beam Package. Bases have a fixed Missile Package.
+Carriers, Transports, and Fleet Trains have no package and cannot fire if their
+printed Attack is zero.
+
+Choose a package when a ship is purchased. A ship may change package only
+during peace, at a cost of 1 RU per Hull Size. Package identity is hidden with
+the group until the group is revealed.
+
+\subsection{Prepare the Battle}
+
+Move the opposing groups off-map and mark the contested system. Reveal all
+ships, Armament Packages, and current technology. Arrange each side's groups by
+firing class.
+
+A Base on a friendly surface in the system joins its owner's space battle. In
+a binary system, every friendly Base may join. A Base is combat-capable, counts
+for Fleet Size and screening, and cannot retreat. Ground Units and surfaces do
+not otherwise participate in space combat.
+
+The player whose movement caused the battle is the attacker. If neither side
+moved into the system this phase, the Phasing Player is the attacker.
+
+\subsection{Initial Range}
+
+The first round begins at Long Range. This represents missile exchanges while
+the opposing formations approach. A scenario or card may change the initial
+range.
+
+\subsection{Range Control}
+
+Before the second and every later round, each player selects one
+combat-capable, non-Fighter ship as a \textbf{Picket}. A Picket still fires
+normally. Its Maneuver Rating is:
+
+\begin{tabularx}{\columnwidth}{@{}Xr@{}}
+\toprule
+Ship & Maneuver \\
+\midrule
+Scout & +2 \\
+Destroyer & +1 \\
+Cruiser, Carrier, or Transport & 0 \\
+Battlecruiser, Battleship, or Dreadnought & $-1$ \\
+No eligible ship & $-2$ \\
+\bottomrule
+\end{tabularx}
+
+Fleet Trains and Bases cannot be Pickets. Each player rolls a d10 and adds the
+Picket's Maneuver Rating and friendly Tactics. The side with fewer
+combat-capable non-Fighter ships also adds +1. The higher total chooses Long or
+Close Range for the round. On a tie, range remains unchanged.
+
+This roll replaces \Imperium's range-determination roll and Traveller's
+individual thrust accounting. Destroying an enemy Scout can therefore change
+control of the engagement.
+
+\subsection{Screening and Fleet Size}
+
+After establishing range each round, count combat-capable ships, including
+operational Fighters and Bases. The side with more may screen eligible groups
+under \SpaceEmpires\ rule 5.7. Fleet Trains and other non-combat units are
+screened automatically while a friendly combat-capable ship remains.
+
+If one side has at least twice as many unscreened combat-capable ships as the
+other, it receives the normal Fleet Size Bonus of +1 Attack for that firing
+round. Recalculate range control, screening, and Fleet Size every round.
+
+\subsection{Defensive Reactions}
+
+Defensive reactions are declared after screening and before any ship fires.
+
+\subsubsection{Point Defense}
+
+At Point Defense 1 or higher, an unscreened SC or DD with a Beam or Mixed
+Package may escort one friendly target group. The escort forfeits all offensive
+fire and Close Assaults this round. The protected group gains +1 Defense
+against missiles, increased to +2 at Point Defense 2 or 3. A target group may
+have only one escort. If the escort is destroyed before a missile attack, the
+bonus is lost.
+
+At Point Defense 3, the escort may also make one normal attack at $-1$ Attack.
+This is an exception to forfeiting offensive fire. Point defense represents
+laser interception, electronic warfare, and terminal countermeasures against
+an incoming salvo.
+
+\subsubsection{Disperse Sand}
+
+Any non-Fighter combat ship may disperse sand. It forfeits all offensive fire,
+Close Assaults, and point defense this round, but gains +1 Defense against
+every beam attack for the round. Sand has no effect against missiles. A ship
+that has already fired cannot disperse sand.
+
+\subsection{Firing Order}
+
+At \textbf{Long Range}, resolve missile fire from Class A through E. Beam-only
+ships cannot fire.
+
+At \textbf{Close Range}, first resolve all beam fire from Class A through E.
+Then resolve short-range missile fire from Class A through E. A ship may fire
+only once in the round; a Mixed ship must choose beam or missile fire. A ship
+destroyed by beam fire cannot later make a short-range missile attack.
+
+Within the same class and weapon step, higher Tactics fires first. The defender
+fires first if Tactics is tied. Fire is not simultaneous. A destroyed ship does
+not fire later in the round.
+
+Each surviving firing ship may target any unscreened enemy unit. A group's
+ships may choose different targets, and the owner may observe each die before
+choosing the next target.
+
+\subsection{Fire Resolution}
+
+Start with the Attack value after its Armament Package modifier, then
+calculate:
+
+\begin{center}
+\textbf{Hit Number = Attack + Attack Tech + Fleet Bonus \\
+$-$ target Defense $-$ target Defense Tech \\
+$-$ defensive reaction bonuses}
+\end{center}
+
+Roll a d10. A result equal to or less than the Hit Number scores one hit. A
+natural 1 always hits. Technology added to a particular ship may not exceed
+that ship's Hull Size. Package, card, and combat-option modifiers are applied
+after enforcing that technology limit.
+
+Damage is cumulative. When a ship has hits equal to its Hull Size, remove it
+and reduce its group's numeral. Carry surviving damage out of combat; it may be
+repaired in a later Logistics Phase.
+
+\subsection{Missile Options}
+
+\subsubsection{High-Intensity Missile Fire}
+
+A ship making a missile attack at either range may expend its magazines for
++1 Attack. Mark it Missile Depleted after firing. It cannot make another
+missile attack during the current Combat Phase. A Mixed ship may still fire
+beams in a later round.
+
+High-Intensity Fire is declared separately for each ship when it fires. A ship
+that is retreating or performing point defense cannot use it.
+
+\subsubsection{Short-Range Missile Fire}
+
+At Close Range, Missile ships attack at $-1$ and Mixed ships at $-2$. These
+attacks occur only after every beam class has fired. High-Intensity Fire may be
+combined with short-range missile fire.
+
+\subsection{Close Assault}
+
+At Close Range, a SC, DD, or Fighter making a beam attack may declare a Close
+Assault. Before the attacker rolls, its target may make immediate defensive
+beam fire if it has a Beam or Mixed Package and has not fired, retreated, or
+used a defensive reaction this round. This defensive shot expends the target's
+normal fire.
+
+If the assaulting ship survives, it attacks with +1 Attack. If defensive fire
+destroys it, it is removed before it can fire. This replaces \Imperium's
+Suicide Attack while retaining its risk-and-reward role.
+
+\subsection{Fighters and Carriers}
+
+Use \SpaceEmpires\ section 11 except as changed here. Fighters use Beam fire
+and may conduct Close Assaults; they cannot fire at Long Range. Fighters in a
+system require enough friendly Carrier capacity or a friendly unneutralized
+World or Outpost. Excess Fighters are destroyed when their final base or
+carrying capacity is lost.
+
+\subsection{Landing During a Space Battle}
+
+After the first firing round, either side may land carried Space Marines on a
+surface in the system. After the second and each later round, either side may
+land any carried Ground Units. The attacker announces first each round.
+
+A Transport may land units even if screened. Space combat then continues.
+Ground combat waits until space combat in the system is complete. A player may
+therefore win on the ground after losing in orbit, but surviving enemy ships
+may attack their Transports before the space battle ends.
+
+\subsection{Retreat}
+
+Beginning in the second firing round, a group may retreat instead of firing
+when its printed class is reached in the applicable weapon step. A group with
+no usable weapon at the current range may still retreat at its printed class.
+Move it to one legal adjacent system. Carriers may not abandon excess Fighters.
+Bases, Fleet Trains, and other non-combat units cannot retreat.
+
+Combat ends when only one side has combat-capable ships in the stellar hex.
+Destroy all enemy non-combat ships left with no escort. Remove Missile Depleted
+and defensive-reaction markers at the end of the Combat Phase.
+
+\subsection{Repair}
+
+During Maintenance, remove damage from ships at a connected friendly World by
+paying 1 RU per hit. Damage at any other location cannot be repaired. Repair is
+optional and occurs after normal maintenance; a damaged ship that is scrapped
+needs no repair.

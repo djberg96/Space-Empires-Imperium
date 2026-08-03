@@ -1,64 +1,92 @@
-\documentclass[a4paper,11pt,twocolumn]{article}
-\pagestyle{myheadings}
+\documentclass[letterpaper,11pt,twocolumn]{article}
 \usepackage[utf8]{inputenc}
-\usepackage[letterpaper,margin=0.5in]{geometry}
 \usepackage[T1]{fontenc}
+\usepackage[letterpaper,margin=0.55in]{geometry}
 \usepackage{tgbonum}
 \usepackage{csquotes}
 \usepackage{enumitem}
 \usepackage{parskip}
 \usepackage{titlesec}
-\usepackage{hyphenat}
 \usepackage{fancyhdr}
 \usepackage{tabularx}
+\usepackage{booktabs}
 \usepackage{multirow}
-\usepackage{authblk}
 \usepackage[dvipsnames]{xcolor}
+\usepackage[hidelinks]{hyperref}
 
 \DeclareTextFontCommand{\textbfit}{\bfseries\itshape}
+\newcommand{\Imperium}{\textit{Imperium}}
+\newcommand{\SpaceEmpires}{\textit{Space Empires: 4X}}
+\newcommand{\CloseEncounters}{\textit{Close Encounters}}
+\newcommand{\RU}{RU}
 
-\title{
+\title{%
   Space Empires: Imperium \\
-  \vspace{0.5em}
-  \large A Mashup of GMT's Space Empires 4x and GDW's Imperium}
-\author{Designed by: Daniel J. Berger}
+  \vspace{0.4em}
+  \large A two-player Traveller-era campaign game}
+\author{Designed by Daniel J. Berger}
+\date{Version 0.1 --- Playtest Draft}
 
 \setlength{\columnsep}{2em}
-\setcounter{secnumdepth}{4}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{2}
+\setlist{nosep,leftmargin=*}
+\raggedbottom
 
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
+\fancyhead[L]{\small Space Empires: Imperium v0.1}
 \fancyfoot[R]{Page \thepage}
+\renewcommand{\headrulewidth}{0.2pt}
 
-\titlespacing{\paragraph}{0pt}{1em}{\medskipamount}
+\titlespacing{\section}{0pt}{1.25em}{0.5em}
+\titlespacing{\subsection}{0pt}{1em}{0.35em}
+\titlespacing{\subsubsection}{0pt}{0.8em}{0.25em}
 
-\titleformat
-{\section}
-[runin]
-{\LARGE}
-{[\thesection.0]}
-{0.5em}
-{}
-
-\titleformat
-{\subsection}
-[hang]
-{\Large\bfseries}
-{[\thesubsection]}
-{1em}
-{}
-
-\titleformat
-{\subsubsection}
-[runin]
-{\large\bfseries}
-{[\thesubsubsection]}
-{1em}
-{}
+\titleformat{\section}
+  {\Large\bfseries}
+  {[\thesection.0]}
+  {0.5em}
+  {}
+\titleformat{\subsection}
+  {\large\bfseries}
+  {[\thesubsection]}
+  {0.5em}
+  {}
+\titleformat{\subsubsection}
+  {\normalsize\bfseries}
+  {[\thesubsubsection]}
+  {0.5em}
+  {}
 
 \begin{document}
   \maketitle
+  \onecolumn
+  \tableofcontents
+  \vfill
+  \begin{center}
+    \small
+    This is a non-commercial fan design. Traveller, \Imperium,
+    \SpaceEmpires, and \CloseEncounters\ remain the property of their
+    respective rights holders. This document is not endorsed by GDW, GMT
+    Games, or the current Traveller rights holders.
+  \end{center}
+  \clearpage
+  \twocolumn
+
   \input{introduction.tex}
   \input{game_parts.tex}
+  \input{setup.tex}
+  \input{sequence_of_play.tex}
+  \input{movement.tex}
+  \input{economics.tex}
+  \input{space_combat.tex}
+  \input{ground_combat.tex}
+  \input{technology.tex}
+  \input{politics_victory.tex}
+  \input{wars_and_peace.tex}
+  \input{cards.tex}
+  \input{scenario_first_shots.tex}
+  \input{player_aid.tex}
 \end{document}

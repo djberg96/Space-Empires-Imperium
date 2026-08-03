@@ -1,35 +1,19 @@
-<svg width="250" height="350" xmlns="http://www.w3.org/2000/svg">
-  <title>Escape Plan</title>
-
-  <defs>
-    <rect id="card_background" width="100%" height="100%" fill="black" stroke="white" stroke-width="15"/>
-  </defs>
-
-  <g id="card">
-    <use href="#card_background"/>
-
-    <g id="card_name" text-anchor="middle" dominant-baseline="central">
-      <rect id="name" x="20" y="20" width="210"/>
-      <text x="125" y="45" fill="white" font-size="28" font-family="stop">ESCAPE PLAN</text>
-    </g>
-
-    <g id="when" text-anchor="middle" dominant-baseline="central">
-      <rect x="80" y="68" rx="8" ry="4" width="90" height="22" fill="red"/>
-      <text x="125" y="80" fill="white" font-size="18">COMBAT</text>
-    </g>
-
-    <g id="description">
-      <rect x="20" y="120" width="210" height="210" fill="lightgrey" stroke="white" stroke-width="3"/>
-      <text id="text" text-anchor="middle" font-size="14">
-         <tspan x="50%" dy="145">You may terminate combat</tspan>
-         <tspan x="50%" dy="1.2em">and retreat without</tspan>
-         <tspan x="50%" dy="1.2em">being fired upon.</tspan>
-         <tspan x="50%" dy="2.2em">All of your ships that retreat</tspan>
-         <tspan x="50%" dy="1.2em">must retreat to the same area.</tspan>
-         <tspan x="50%" dy="2.2em">If terminating combat at</tspan>
-         <tspan x="50%" dy="1.2em">a friendly World, then</tspan>
-         <tspan x="50%" dy="1.2em">immediately lose 1 Glory Point.</tspan>
-      </text>
-    </g>
-  </g>
+<svg width="250" height="350" viewBox="0 0 250 350" xmlns="http://www.w3.org/2000/svg">
+  <title>ESCAPE PLAN</title>
+  <rect width="250" height="350" fill="black" stroke="white" stroke-width="15"/>
+  <text x="125" y="53" fill="white" font-size="28"
+        font-family="stop, sans-serif" text-anchor="middle">ESCAPE PLAN</text>
+  <rect x="55" y="70" rx="8" ry="5" width="140" height="24" fill="#a40000"/>
+  <text x="125" y="87" fill="white" font-size="13" font-family="sans-serif"
+        text-anchor="middle">COMBAT</text>
+  <text x="222" y="111" fill="white" font-size="12" font-family="sans-serif"
+        text-anchor="end">x1</text>
+  <rect x="20" y="120" width="210" height="210" fill="#dedede" stroke="white" stroke-width="3"/>
+  <text fill="black" font-size="14" font-family="serif" text-anchor="middle">
+    <tspan x="125" y="167">Before a firing round, retreat</tspan>
+        <tspan x="125" y="191">all your ships to the same legal</tspan>
+        <tspan x="125" y="215">system without enemy fire.</tspan>
+        <tspan x="125" y="239">From a friendly World, adjust</tspan>
+        <tspan x="125" y="263">Glory 1 in the opponent&apos;s favor.</tspan>
+  </text>
 </svg>
